@@ -12,6 +12,13 @@ Code, issues, and contributions live here:
 
 ---
 
+## Repositories
+
+- **uvrn-packages** — Main codebase (Delta Engine, CLI, API, MCP, adapter). Published as `@uvrn/*` on npm. [GitHub](https://github.com/UVRN-org/uvrn-packages)
+- **uvrn-base** — Protocol home (schemas, receipts, validation). [www.uvrn.org](https://www.uvrn.org). [GitHub](https://github.com/UVRN-org/uvrn-base)
+
+---
+
 ## Packages on npm
 
 | Package | Description |
