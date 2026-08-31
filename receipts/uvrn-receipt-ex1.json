@@ -1,0 +1,65 @@
+{
+  "receipt_id": "uvrn_demo_0001",
+  "issuer": "github.com/your-org/your-repo",
+  "event": "code.commit",
+  "description": "Demonstration receipt — documents a verified code commit through the UVRN proof layer (public schema example).",
+  "timestamp": "2025-10-06T00:00:00Z",
+
+  "actor": {
+    "type": "human",
+    "name": "Jane Developer",
+    "identity": "jane@yourorg.com",
+    "wallet": "0xA9F1..."
+  },
+
+  "resource": {
+    "type": "repository",
+    "url": "https://github.com/your-org/your-repo",
+    "branch": "main",
+    "commit_hash": "3b7e24f9b8f4...",
+    "files_changed": 12
+  },
+
+  "integrity": {
+    "hash_algorithm": "sha256",
+    "hash": "sha256:7e1a8b23c2c...",
+    "signature_method": "eip191",
+    "signature": "0x4d9c7a...",
+    "signer_address": "0xA9F1b2C3d4E5f6..."
+  },
+
+  "validation": {
+    "v_score": 95,
+    "checks": {
+      "completeness": true,
+      "integrity_match": true,
+      "timestamp_valid": true
+    },
+    "revision_note": "Field structure updated for publication — no analytic or delta logic included."
+  },
+
+  "block_state": "loose",
+  "certificate": "DRVC3 v1.0",
+  "tags": ["#drvc3", "#proof", "#code", "#commit"],
+
+  "replay_instructions": {
+    "service": "github.ci.replay_build",
+    "params": {
+      "repo": "your-org/your-repo",
+      "commit": "3b7e24f9b8f4"
+    }
+  },
+
+  "references": {
+    "parent_receipt": "uvrn_genesis_001",
+    "canonical_url": "https://uvrn.org/receipts/uvrn_demo_0001"
+  },
+
+  "notes": "Public demonstration of receipt schema. Hash and timestamp are immutable once canonized. Safe for open publication; excludes all Δ-Engine or learning logic.",
+
+  "blockchain_anchor": {
+    "enabled": false,
+    "chain": null,
+    "tx_hash": null
+  }
+}
