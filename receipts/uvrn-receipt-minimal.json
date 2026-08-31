@@ -1,0 +1,24 @@
+{
+  "receipt_id": "abc123",
+  "issuer": "app.example.com",
+  "event": "content.publish",
+  "timestamp": "2025-10-06T21:00:00Z",
+  "integrity": {
+    "hash_algorithm": "sha256",
+    "hash": "sha256:a1b2c3d4e5f6...",
+    "signature_method": "eip191",
+    "signature": "0x...",
+    "signer_address": "0xA9F1b2C3d4E5f6..."
+  },
+  "validation": {
+    "v_score": 92,
+    "checks": {}
+  },
+  "block_state": "loose",
+  "certificate": "DRVC3 v1.0",
+  "replay_instructions": {
+    "service": "app.launcher",
+    "params": { "id": "42" }
+  },
+  "tags": ["#uvrn", "#drvc3", "#replayable"]
+}
